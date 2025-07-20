@@ -1,402 +1,991 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Lazuardi Akbar</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>Lazuardi Akbar Imani - Portfolio</title>
+  <link rel="icon" href="static/assets/Dezkrazzer_logo.png" type="image/x-icon">
 
-  <!-- Favicons -->
-  <link href="https://images-ext-2.discordapp.net/external/P1Rf55ButTR19CrdFAENg-LIbegKqB0R4v1GU6qSAbw/%3Fsize%3D4096/https/cdn.discordapp.com/avatars/735403745998798902/3ee4f46fc9fcb95391f916ac0d291355.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <meta name="description" content="Portfolio of Lazuardi Akbar Imani, a Full-stack Developer & Designer. Explore my projects, skills, and services.">
+  <meta name="keywords" content="Lazuardi Akbar Imani, Full-stack Developer, Designer, Portfolio, Web Development, UI/UX Design, React, Node.js, MongoDB, JavaScript">
+  <meta name="author" content="Lazuardi Akbar Imani">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: MyResume - v4.7.0
-  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <link href="static/style/index.css" rel="stylesheet">
 </head>
-
 <body>
-
-  <!-- ======= Mobile nav toggle button ======= -->
-  <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
-  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
-  <!-- ======= Header ======= -->
-  <header id="header" class="d-flex flex-column justify-content-center">
-
-    <nav id="navbar" class="navbar nav-menu">
-      <ul>
-        <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-        <li><a href="#facts" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Stats</span></a></li>
-        <li><a href="#skills" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Skill</span></a></li>
-        <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
-        <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
-      </ul>
-    </nav><!-- .nav-menu -->
-
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center">
-    <div class="container" data-aos="zoom-in" data-aos-delay="100">
-      <h1>Lazuardi Akbar</h1>
-      <p>I'm <span class="typed" data-typed-items="Designer, Developer, Editor, Gamer"></span></p>
-      <div class="social-links">
-        <a href="https://twitter.com/exoticfearless" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="https://www.facebook.com/lzuardiakbr/" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="https://www.instagram.com/lzuardiai" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="https://www.youtube.com/channel/UCho0s4LYgbs4nqXjwAASjTQ" class="google-plus"><i class="bx bxl-youtube"></i></a>
-        <a href="https://github.com/Dezkrazzer" class="linkedin"><i class="bx bxl-github"></i></a>
+  <!-- Navigation -->
+  <nav class="fixed w-full z-50 bg-gray-900 bg-opacity-90 backdrop-blur-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <div class="flex-shrink-0">
+          <span class="text-white font-bold text-xl">LZUARDIAI</span>
+        </div>
+        <div class="hidden md:block">
+          <div class="ml-10 flex items-baseline space-x-4">
+            <a href="#home" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300">Home</a>
+            <a href="#about" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300">About</a>
+            <a href="#education" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300">Education</a>
+            <a href="#organization" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300">Organization</a>
+            <a href="#services" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300">Services</a>
+            <a href="#projects" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300">Projects</a>
+            <a href="#contact" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300">Contact</a>
+          </div>
+        </div>
+        <div class="md:hidden">
+          <button class="mobile-menu-button p-2 rounded-md text-gray-400 hover:text-white focus:outline-none">
+            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
       </div>
     </div>
-  </section><!-- End Hero -->
-
-  <main id="main">
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>About</h2>
-          <p>Hello, my name is Lazuardi Akbar from Ngawi, East Java, Indonesia. Interested in programming, crazy about games, and very interested in the world of creators. A Head Founder of <a href="htttps://dsc.gg/athx">Secret Development</a> and as community management. As a content maker on social media. I like to help people with my way.</p>
-        </div>
-        
-
-      </div>
-    </section><!-- End About Section -->
-
-    <!-- ======= Facts Section ======= -->
-    <section id="facts" class="facts">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Stats</h2>
-          <p>These are some of my statistics so far.</p>
-        </div>
-
-        <center><div class="row">
-
-          <div class="col-lg-3 col-md-6">
-            <div class="count-box">
-              <i class="bi bi-emoji-smile"></i>
-              <span data-purecounter-start="0" data-purecounter-end="438" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Clients</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
-            <div class="count-box">
-              <i class="bi bi-journal-richtext"></i>
-              <span data-purecounter-start="0" data-purecounter-end="17" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Projects</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-            <div class="count-box">
-              <i class="bi bi-award"></i>
-              <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Awards</p>
-            </div>
-          </div>
-
-        </div></center>
-
-      </div>
-    </section><!-- End Facts Section -->
-
-    <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Skills</h2>
-          <p>Maybe I'm more in some things, but don't forget I'm lacking in some things.</p>
-        </div>
-
-        <div class="row skills-content">
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill">HTML <i class="val">94%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="94" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">CSS <i class="val">88%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">JavaScript <i class="val">85%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill">Typescript <i class="val">23%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="23" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Video n Photo editing <i class="val">93%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Others <i class="val">55%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-          </div>
-          <br>
-          <center><img src="https://media.discordapp.net/attachments/899506068181360648/952429122079031357/cert-23989897-1024.png" style="width:400px;height:auto;"></center>
-        </div>
-
-      </div>
-    </section><!-- End Skills Section -->
-
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Services</h2>
-          <p>This is a project I published.</p>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box iconbox-blue">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
-                </svg>
-                <i class="bx bxl-discord"></i>
-              </div>
-              <h4><a href="https://discord.com/oauth2/authorize?client_id=768804656431497246&permissions=8&scope=bot%20applications.commands">Neo Discord Bot</a></h4>
-              <p>Hi! My name is Neo. I am a next project of Secret Development's. I'm still in the development stage and all my features are still BETA.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
-            <div class="icon-box iconbox-orange ">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426"></path>
-                </svg>
-                <i class="bx bxl-whatsapp"></i>
-              </div>
-              <h4><a href="">WhatsApp Bot [MT]</a></h4>
-              <p>Bot created using whatsapp api, but still under development</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
-            <div class="icon-box iconbox-pink">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781"></path>
-                </svg>
-                <i class="bx bx-mobile-alt"></i>
-              </div>
-              <h4><a href="https://lazuardiakbar.me/wr-counter/">Mobile Legends WR Counter</a></h4>
-              <p>The web used to calculate the winrate of Mobile Legends players</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box iconbox-yellow">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,503.46388370962813C374.79870501325706,506.71871716319447,464.8034551963731,527.1746412648533,510.4981551193396,467.86667711651364C555.9287308511215,408.9015244558933,512.6030010748507,327.5744911775523,490.211057578863,256.5855673507754C471.097692560561,195.9906835881958,447.69079081568157,138.11976852964426,395.19560036434837,102.3242989838813C329.3053358748298,57.3949838291264,248.02791733380457,8.279543830951368,175.87071277845988,42.242879143198664C103.41431057327972,76.34704239035025,93.79494320519305,170.9812938413882,81.28167332365135,250.07896920659033C70.17666984294237,320.27484674793965,64.84698225790005,396.69656628748305,111.28512138212992,450.4950937839243C156.20124167950087,502.5303643271138,231.32542653798444,500.4755392045468,300,503.46388370962813"></path>
-                </svg>
-                <i class="bx bx-video"></i>
-              </div>
-              <h4><a href="https://meet.dezkrazzer.repl.co/">Video Conference</a></h4>
-              <p>Application made for video conferencing with your friends</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
-            <div class="icon-box iconbox-red">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,532.3542879108572C369.38199826031484,532.3153073249985,429.10787420159085,491.63046689027357,474.5244479745417,439.17860296908856C522.8885846962883,383.3225815378663,569.1668002868075,314.3205725914397,550.7432151929288,242.7694973846089C532.6665558377875,172.5657663291529,456.2379748765914,142.6223662098291,390.3689995646985,112.34683881706744C326.66090330228417,83.06452184765237,258.84405631176094,53.51806209861945,193.32584062364296,78.48882559362697C121.61183558270385,105.82097193414197,62.805066853699245,167.19869350419734,48.57481801355237,242.6138429142374C34.843463184063346,315.3850353017275,76.69343916112496,383.4422959591041,125.22947124332185,439.3748458443577C170.7312796277747,491.8107796887764,230.57421082200815,532.3932930995766,300,532.3542879108572"></path>
-                </svg>
-                <i class="bx bx-heart"></i>
-              </div>
-              <h4><a href="https://lazuardiakbar.me/iloveyou/">I LOVE YOU</a></h4>
-              <p>Website to express your feelings to your crush. Zhycorp Clone</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
-            <div class="icon-box iconbox-teal">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,566.797414625762C385.7384707136149,576.1784315230908,478.7894351017131,552.8928747891023,531.9192734346935,484.94944893311C584.6109503024035,417.5663521118492,582.489472248146,322.67544863468447,553.9536738515405,242.03673114598146C529.1557734026468,171.96086150256528,465.24506316201064,127.66468636344209,395.9583748389544,100.7403814666027C334.2173773831606,76.7482773500951,269.4350130405921,84.62216499799875,207.1952322260088,107.2889140133804C132.92018162631612,134.33871894543012,41.79353780512637,160.00259165414826,22.644507872594943,236.69541883565114C3.319112789854554,314.0945973066697,72.72355303640163,379.243833228382,124.04198916343866,440.3218312028393C172.9286146004772,498.5055451809895,224.45579914871206,558.5317968840102,300,566.797414625762"></path>
-                </svg>
-                <i class="bx bx-sad"></i>
-              </div>
-              <h4><a href="https://lazuardiakbar.me/answer/">Answer from iloveyou</a></h4>
-              <p>It can help to reject someone if you don't like them</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Services Section -->
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Contact</h2>
-        </div>
-
-        <div class="row mt-1">
-
-          <div class="col-lg-4">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p>Ngawi, East Java</p>
-              </div>
-
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>lazuardiakbar1604@gmail.com</p>
-              </div>
-
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
-                <p>+62 823 3717 0026</p>
-              </div>
-
-            </div>
-
-          </div>
-
-          <div class="col-lg-8 mt-5 mt-lg-0">
-
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit" disabled>Send Message</button></div>
-            </form>
-
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Contact Section -->
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <h3>Lazuardi Akbar</h3>
-      <p>If you want to be respected, then respect others first.</p>
-      <div class="social-links">
-        <a href="https://twitter.com/exoticfearless" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="https://www.facebook.com/lzuardiakbr/" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="https://www.instagram.com/lzuardiai" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="https://www.youtube.com/channel/UCho0s4LYgbs4nqXjwAASjTQ" class="google-plus"><i class="bx bxl-youtube"></i></a>
-        <a href="https://github.com/Dezkrazzer" class="linkedin"><i class="bx bxl-github"></i></a>
-      </div>
-      <div class="copyright">
-        &copy; Copyright <strong><span>Lazuardi Akbar</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: [license-url] -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/ -->
-        Designed by <a href="https://lazuardiakbar.live">Dezkrazzer Developepment</a>
+    <!-- Mobile menu -->
+    <div class="mobile-menu hidden md:hidden bg-gray-800">
+      <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <a href="#home" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
+        <a href="#about" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
+        <a href="#education" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Education</a>
+        <a href="#organization" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Organization</a>
+        <a href="#services" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Services</a>
+        <a href="#projects" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projects</a>
+        <a href="#contact" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
       </div>
     </div>
-  </footer><!-- End Footer -->
+  </nav>
 
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <!-- Hero Section -->
+  <section id="home" class="hero-section min-h-screen flex items-center justify-center pt-40">
+    <div class="container mx-auto px-6 text-center">
+      <div class="animate-float">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4">Hello 👋, I am</h1>
+        <h2 class="text-5xl md:text-7xl font-bold mb-8 gradient-text">Lazuardi Akbar Imani</h2>
+        <p class="text-xl md:text-2xl text-gray-400 mb-12 max-w-2xl mx-auto">Informatics Student | Full-stack Developer & Designer passionate about creating beautiful and functional digital experiences.</p>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+        <div class="flex justify-center space-x-6">
+          <a href="https://www.linkedin.com/in/lazuardi-akbar-imani-803836375/" class="social-icon text-blue-400 hover:text-blue-300 text-3xl" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://www.instagram.com/lzuardiai/" class="social-icon text-pink-500 hover:text-pink-400 text-3xl" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://github.com/Dezkrazzer" class="social-icon text-gray-200 hover:text-white text-3xl" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.youtube.com/@dezkrazzer" class="social-icon text-red-500 hover:text-red-400 text-3xl" aria-label="YouTube">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="https://www.facebook.com/lzuardiakbr" class="social-icon text-blue-500 hover:text-blue-400 text-3xl" aria-label="Facebook">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="https://www.tiktok.com/@undefinedsyntax" class="social-icon text-white-500 hover:text-white-400 text-3xl" aria-label="Tiktok">
+            <i class="fab fa-tiktok"></i>
+          </a>
+        </div>
+      </div>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+      <div class="mt-20 animate-bounce">
+        <a href="#about" class="inline-block">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
 
+  <!-- About Me Section -->
+  <section id="about" class="py-20 bg-gray-900">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-16 gradient-text">About Me</h2>
+
+      <div class="flex flex-col md:flex-row items-center justify-between">
+        <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+          <div class="profile-pic w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden mx-auto shadow-2xl">
+            <img src="static/assets/foto_bg_red.jpg" alt="Lazuardi Akbar Imani" class="w-full h-full object-cover">
+          </div>
+        </div>
+        <div class="md:w-1/2">
+          <h3 class="text-2xl font-semibold mb-4">Who am I?</h3>
+          <p class="text-gray-400 mb-6 leading-relaxed">
+            I'm Lazuardi Akbar Imani, a passionate Full-stack Developer with expertise in both front-end and back-end technologies.
+            With 3 years of experience in web development, I specialize in creating responsive, user-friendly websites and applications.
+          </p>
+          <p class="text-gray-400 mb-6 leading-relaxed">
+            My journey in tech started when I was in high school, and since then I've been constantly learning new technologies
+            and frameworks to stay at the cutting edge of web development.
+          </p>
+          <p class="text-gray-400 mb-8 leading-relaxed">
+            When I'm not coding, you can find me designing user interfaces, contributing to open-source projects, or exploring new coffee shops in town.
+          </p>
+
+          <div class="flex flex-wrap gap-4">
+            <div class="bg-gray-800 px-4 py-2 rounded-full">
+              <span class="text-blue-400">Freelance:</span> <span class="text-green-400">Available</span>
+            </div>
+            <div class="bg-gray-800 px-4 py-2 rounded-full">
+              <span class="text-blue-400">Address:</span> <span class="text-gray-300">Ngawi, Indonesia</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="py-20 bg-gray-800">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-5 gradient-text">Education</h2>
+      <p class="text-center text-gray-400 mb-16">
+        My educational journey has been a blend of academic excellence and practical experience, shaping me into the developer I am today.
+      </p>
+
+      <div class="max-w-4xl mx-auto">
+        <!-- University -->
+        <a href="https://www.unesa.ac.id/" target="_blank" rel="noopener noreferrer" class="block">
+          <div class="mb-12 p-6 bg-gray-900 rounded-xl border-l-4 border-blue-500 transition-all duration-300 hover:scale-110">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+              <div class="mb-4 md:mb-0 flex items-center">
+                <div>
+                  <h3 class="text-2xl font-semibold text-white">Universitas Negeri Surabaya</h3>
+                  <p class="text-blue-400">S1 Teknik Informatika</p>
+                </div>
+              </div>
+              <div class="text-right">
+                <span class="inline-block px-3 py-1 bg-blue-900 text-blue-200 rounded-full text-sm font-medium">2024 - Present</span>
+                <p class="text-xl font-bold mt-2 text-white">GPA: 3.96/4.0</p>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- High School -->
+        <a href="https://sman1ngawi.sch.id/" target="_blank" rel="noopener noreferrer" class="block">
+          <div class="p-6 bg-gray-900 rounded-xl border-l-4 border-blue-500 transition-all duration-300 hover:scale-110">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+              <div class="mb-4 md:mb-0 flex items-center">
+                <div>
+                  <h3 class="text-2xl font-semibold text-white">SMA Negeri 1 Ngawi</h3>
+                  <p class="text-blue-400">Matematika dan IPA</p>
+                </div>
+              </div>
+              <div class="text-right">
+                <span class="inline-block px-3 py-1 bg-blue-900 text-blue-200 rounded-full text-sm font-medium">2021 - 2024</span>
+                <p class="text-xl font-bold mt-2 text-white">Final Score: 92.5/100</p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Organization Section -->
+  <section id="organization" class="py-20 bg-gray-900">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-5 gradient-text">Organization</h2>
+      <p class="text-center text-gray-400 mb-16">
+        My involvement in various organizations has honed my leadership and teamwork skills, allowing me to contribute effectively to collaborative projects.
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        <!-- Organization 1 -->
+        <a href="https://gdg.community.dev/gdg-on-campus-universitas-negeri-surabaya-surabaya-indonesia/" target="_blank" class="bg-gray-800 p-6 rounded-xl border border-gray-700 transition-all duration-300 hover:scale-105 hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/10">
+          <div class="flex items-start mb-4">
+            <div class="bg-blue-500 p-3 rounded-lg mr-4">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHSxEeP7gl-3dSQMRXMsnPd0zetnr9EgMXUw&s" alt="GDG Logo" class="w-14 h-14">
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold text-white">Google Developer Group on Campus</h3>
+              <p class="text-blue-400">Universitas Negeri Surabaya</p>
+              <p class="text-gray-400">Member • 2024 - Present</p>
+            </div>
+          </div>
+          <p class="text-gray-400">
+            A student community established at universities and colleges worldwide. It aims to provide a platform for students to learn, share knowledge, and develop skills in technology, particularly those related to Google products and technologies.
+          </p>
+        </a>
+
+        <!-- Organization 2 -->
+        <a href="https://diginesa.com" target="_blank" class="bg-gray-800 p-6 rounded-xl border border-gray-700 transition-all duration-300 hover:scale-105 hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/10">
+          <div class="flex items-start mb-4">
+            <div class="bg-blue-500 p-3 rounded-lg mr-4">
+              <img src="https://diginesa.com/assets/Diginesa_Sayap.png" alt="Diginesa Logo" class="w-14 h-14">
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold text-white">Diginesa</h3>
+              <p class="text-blue-400">Universitas Negeri Surabaya</p>
+              <p class="text-gray-400">Programmer Staff • 2025 - Present</p>
+            </div>
+          </div>
+          <p class="text-gray-400">
+            DIGINESA is a synergy of technological innovation and digital education. We accelerate Indonesia's transformation through digital solutions, talent training, and industry collaboration.
+          </p>
+        </a>
+
+        <!-- Organization 3 -->
+        <a href="https://artesissman1ngawi.wordpress.com/" target="_blank" class="bg-gray-800 p-6 rounded-xl border border-gray-700 transition-all duration-300 hover:scale-105 hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/10">
+          <div class="flex items-start mb-4">
+            <div class="bg-blue-500 p-3 rounded-lg mr-4">
+              <img src="https://artesissman1ngawi.wordpress.com/wp-content/uploads/2022/11/ghsdg-e1649301185205.png" alt="Artesis Logo" class="w-14 h-14">
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold text-white">Artesis</h3>
+              <p class="text-blue-400">SMA Negeri 1 Ngawi</p>
+              <p class="text-gray-400">Sineas Division • 2021 - 2024</p>
+            </div>
+          </div>
+          <p class="text-gray-400">
+            ARTESIS is a journalism organization under the auspices of SMA Negeri 1 Ngawi. It was founded on October 25, 2002. It creates magazines ranging from multi-dimensional wall magazines to SMA Negeri 1 Ngawi's magazine.
+          </p>
+        </a>
+
+        <!-- Organization 4 -->
+        <a href="https://acronet.work/" target="_blank" class="bg-gray-800 p-6 rounded-xl border border-gray-700 transition-all duration-300 hover:scale-105 hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/10">
+          <div class="flex items-start mb-4">
+            <div class="bg-blue-500 p-3 rounded-lg mr-4">
+              <img src="https://acronet.work/assets/logo.png" alt="GDG Logo" class="w-14 h-14">
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold text-white">Acro Network</h3>
+              <p class="text-blue-400">Digital Community</p>
+              <p class="text-gray-400">Founder • 2022 - Present</p>
+            </div>
+          </div>
+          <p class="text-gray-400">
+            Acro Network is a digital community that provides a platform for creativity, gaming, and the digital world. We have a modern Minecraft server that you can play with your friends! We also provide various digital products you might need.
+          </p>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-20 bg-gray-800">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-5 gradient-text">My Services</h2>
+      <p class="text-center text-gray-400 mb-16">
+        I offer a range of services to help you achieve your digital goals, from web development to video production.
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Service 1 -->
+        <div class="service-card p-8 rounded-xl">
+          <div class="text-blue-500 text-4xl mb-4">
+            <i class="fas fa-code"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-white mb-3">Full-stack Development</h3>
+          <p class="text-gray-400 mb-4">
+            Comprehensive web development services from front-end to back-end using modern technologies like React, Node.js, and MongoDB.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-blue-900 text-blue-200 rounded-full text-xs">React</span>
+            <span class="px-3 py-1 bg-blue-900 text-blue-200 rounded-full text-xs">Node.js</span>
+            <span class="px-3 py-1 bg-blue-900 text-blue-200 rounded-full text-xs">MongoDB</span>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card p-8 rounded-xl">
+          <div class="text-blue-500 text-4xl mb-4">
+            <i class="fas fa-paint-brush"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-white mb-3">UI/UX Design</h3>
+          <p class="text-gray-400 mb-4">
+            Creating beautiful, intuitive user interfaces with a focus on user experience and accessibility standards.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-blue-900 text-blue-200 rounded-full text-xs">Figma</span>
+            <span class="px-3 py-1 bg-blue-900 text-blue-200 rounded-full text-xs">Adobe XD</span>
+            <span class="px-3 py-1 bg-blue-900 text-blue-200 rounded-full text-xs">User Testing</span>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card p-8 rounded-xl">
+          <div class="text-blue-500 text-4xl mb-4">
+            <i class="fas fa-video"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-white mb-3">Video Shooting</h3>
+          <p class="text-gray-400 mb-4">
+            Professional video shooting services for events, corporate videos, and promotional content with high-quality production.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-blue-900 text-blue-200 rounded-full text-xs">Camera</span>
+            <span class="px-3 py-1 bg-blue-900 text-blue-200 rounded-full text-xs">Mirrorless/DSLR</span>
+            <span class="px-3 py-1 bg-blue-900 text-blue-200 rounded-full text-xs">Audio</span>
+          </div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-card p-8 rounded-xl">
+          <div class="text-blue-500 text-4xl mb-4">
+            <i class="fas fa-pen-to-square"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-white mb-3">Video Editing</h3>
+          <p class="text-gray-400 mb-4">
+            Professional video editing services for YouTube, social media, and corporate videos with engaging storytelling.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-blue-900 text-blue-200 rounded-full text-xs">Premiere Pro</span>
+            <span class="px-3 py-1 bg-blue-900 text-blue-200 rounded-full text-xs">After Effects</span>
+            <span class="px-3 py-1 bg-blue-900 text-blue-200 rounded-full text-xs">Audition</span>
+          </div>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="service-card p-8 rounded-xl">
+          <div class="text-blue-500 text-4xl mb-4">
+            <i class="fas fa-video"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-white mb-3">Live Broadcaster</h3>
+          <p class="text-gray-400 mb-4">
+            Professional live broadcasting services for events, webinars, and online presentations with high-quality streaming.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-blue-900 text-blue-200 rounded-full text-xs">Streaming Software</span>
+            <span class="px-3 py-1 bg-blue-900 text-blue-200 rounded-full text-xs">Camera</span>
+            <span class="px-3 py-1 bg-blue-900 text-blue-200 rounded-full text-xs">Microphones</span>
+          </div>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="service-card p-8 rounded-xl">
+          <div class="text-blue-500 text-4xl mb-4">
+            <i class="fas fa-server"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-white mb-3">Hosting Providers</h3>
+          <p class="text-gray-400 mb-4">
+            Reliable hosting solutions for websites and applications with a focus on performance, security, and scalability.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-blue-900 text-blue-200 rounded-full text-xs">Cloudflare</span>
+            <span class="px-3 py-1 bg-blue-900 text-blue-200 rounded-full text-xs">Docker</span>
+            <span class="px-3 py-1 bg-blue-900 text-blue-200 rounded-full text-xs">Pelican</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="py-20 bg-gray-900">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-5 gradient-text">My Skills</h2>
+      <p class="text-center text-gray-400 mb-16">
+        I have a diverse skill set that allows me to tackle various challenges in web development and design.
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <!-- Programming Languages -->
+        <div class="bg-gray-800 p-6 rounded-xl hover:scale-110 transition-all duration-300">
+          <h3 class="text-xl font-semibold text-white mb-6 border-b border-gray-700 pb-2">Programming Languages</h3>
+          <div class="grid grid-cols-3 gap-4">
+            <div class="flex flex-col items-center">
+              <i class="fab fa-js text-4xl text-yellow-400 mb-2"></i>
+              <span class="text-gray-300 text-sm">JavaScript</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <i class="devicon-typescript-plain colored text-4xl text-yellow-400 mb-2"></i>
+              <span class="text-gray-300 text-sm">TypeScript</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <i class="devicon-java-plain colored text-4xl text-red-500 mb-2"></i>
+              <span class="text-gray-300 text-sm">Java</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <i class="fab fa-python text-4xl text-blue-400 mb-2"></i>
+              <span class="text-gray-300 text-sm">Python</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Front-end Techs -->
+        <div class="bg-gray-800 p-6 rounded-xl hover:scale-110 transition-all duration-300">
+          <h3 class="text-xl font-semibold text-white mb-6 border-b border-gray-700 pb-2">Front-end Techs</h3>
+          <div class="grid grid-cols-3 gap-4">
+            <div class="flex flex-col items-center">
+              <i class="fab fa-html5 text-4xl text-orange-500 mb-2"></i>
+              <span class="text-gray-300 text-sm">HTML5</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <i class="fab fa-css3-alt text-4xl text-blue-400 mb-2"></i>
+              <span class="text-gray-300 text-sm">CSS3</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <i class="devicon-tailwindcss-plain colored text-4xl text-blue-400 mb-2"></i>
+              <span class="text-gray-300 text-sm">Tailwind</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <i class="devicon-bootstrap-plain colored text-4xl text-blue-500 mb-2"></i>
+              <span class="text-gray-300 text-sm">Bootstrap</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Database -->
+        <div class="bg-gray-800 p-6 rounded-xl hover:scale-110 transition-all duration-300">
+          <h3 class="text-xl font-semibold text-white mb-6 border-b border-gray-700 pb-2">Database</h3>
+          <div class="grid grid-cols-3 gap-4">
+            <div class="flex flex-col items-center">
+              <i class="devicon-mongodb-plain colored text-4xl text-blue-400 mb-2"></i>
+              <span class="text-gray-300 text-sm">MongoDB</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <i class="fas fa-database text-4xl text-orange-500 mb-2"></i>
+              <span class="text-gray-300 text-sm">MySQL</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <i class="devicon-mariadb-original text-4xl text-blue-600 mb-2"></i>
+              <span class="text-gray-300 text-sm">MariaDB</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="bg-gray-800 p-6 rounded-xl hover:scale-110 transition-all duration-300">
+          <h3 class="text-xl font-semibold text-white mb-6 border-b border-gray-700 pb-2">Tools</h3>
+          <div class="grid grid-cols-3 gap-4">
+            <div class="flex flex-col items-center">
+              <i class="fab fa-git-alt text-4xl text-orange-500 mb-2"></i>
+              <span class="text-gray-300 text-sm">Git</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <i class="fab fa-github text-4xl text-gray-200 mb-2"></i>
+              <span class="text-gray-300 text-sm">GitHub</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <i class="fab fa-docker text-4xl text-blue-500 mb-2"></i>
+              <span class="text-gray-300 text-sm">Docker</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <i class="fab fa-figma text-4xl text-purple-500 mb-2"></i>
+              <span class="text-gray-300 text-sm">Figma</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" class="w-10 h-10 mb-2" alt="VSCode">
+              <span class="text-gray-300 text-sm">VSCode</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Multimedia -->
+        <div class="bg-gray-800 p-6 rounded-xl hover:scale-110 transition-all duration-300">
+          <h3 class="text-xl font-semibold text-white mb-6 border-b border-gray-700 pb-2">Multimedia</h3>
+          <div class="grid grid-cols-3 gap-4">
+            <div class="flex flex-col items-center">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Adobe_Premiere_Pro_CC_icon.svg/2101px-Adobe_Premiere_Pro_CC_icon.svg.png" class="w-10 h-10 mb-2" alt="Photoshop">
+              <span class="text-gray-300 text-sm">Premiere Pro</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Adobe_After_Effects_CC_icon.svg/2101px-Adobe_After_Effects_CC_icon.svg.png" class="w-10 h-10 mb-2" alt="After Effects">
+              <span class="text-gray-300 text-sm">After Effects</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Adobe_Audition_CC_icon_%282020%29.svg/1051px-Adobe_Audition_CC_icon_%282020%29.svg.png" class="w-10 h-10 mb-2" alt="Audition">
+              <span class="text-gray-300 text-sm">Audition</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/capcut-icon.png" class="w-10 h-10 mb-2" alt="Capcut">
+              <span class="text-gray-300 text-sm">Capcut</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/1/13/OBS_Studio_logo.png" class="w-10 h-10 mb-2" alt="OBS Studio">
+              <span class="text-gray-300 text-sm">OBS Studio</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <img src="https://vectorseek.com/wp-content/uploads/2023/09/Streamlabs-Icon-Logo-Vector.svg-.png" class="w-10 h-10 mb-2" alt="Streamlabs">
+              <span class="text-gray-300 text-sm">Streamlabs</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="bg-gray-800 p-6 rounded-xl hover:scale-110 transition-all duration-300">
+          <h3 class="text-xl font-semibold text-white mb-6 border-b border-gray-700 pb-2">Soft Skills</h3>
+          <div class="grid grid-cols-3 gap-4">
+            <div class="flex flex-col items-center">
+              <i class="fas fa-comments text-4xl text-green-400 mb-2"></i>
+              <span class="text-gray-300 text-sm">Communication</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <i class="fas fa-users text-4xl text-blue-400 mb-2"></i>
+              <span class="text-gray-300 text-sm">Teamwork</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <i class="fas fa-lightbulb text-4xl text-yellow-400 mb-2"></i>
+              <span class="text-gray-300 text-sm">Creativity</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <i class="fas fa-brain text-4xl text-purple-400 mb-2"></i>
+              <span class="text-gray-300 text-sm">Problem Solving</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <i class="fas fa-tasks text-4xl text-red-400 mb-2"></i>
+              <span class="text-gray-300 text-sm">Time Management</span>
+            </div>
+            <div class="flex flex-col items-center">
+              <i class="fa-solid fa-robot text-4xl text-pink-400 mb-2"></i>
+              <span class="text-gray-300 text-sm">AI Prompting</span>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-20 bg-gray-800">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-5 gradient-text">My Projects</h2>
+      <p class="text-center text-gray-400 mb-16">
+        Here are some of the projects I've worked on, showcasing my skills in web development, design, and multimedia.
+      </p>
+
+      <div class="relative">
+        <div id="slider-container" class="overflow-x-auto scroll-smooth no-scrollbar">
+          <div class="slidere inline-flex gap-8 p-8">
+            <!-- Project 1 -->
+            <div class="project-card w-80 flex-shrink-0 bg-gray-800/50 rounded-xl flex flex-col" data-title="DIGINESA - Company Profile" data-img="static/assets/project/diginesa.png" data-link="https://diginesa.com" data-tech='["Node.js", "EJS", "Tailwind"]' data-description="A comprehensive dashboard for online stores with analytics, inventory management, and order processing.">
+              <div class="h-48 overflow-hidden rounded-t-lg">
+                <img src="static/assets/project/diginesa.png" alt="DIGINESA" class="w-full h-full object-cover">
+              </div>
+              <div class="p-6 flex flex-col flex-grow">
+                <div class="flex-grow">
+                  <h3 class="text-xl font-semibold text-white mb-2">DIGINESA - Company Profile</h3>
+                  <p class="text-gray-400 text-sm mb-4 line-clamp-2">A comprehensive dashboard for online stores with analytics, inventory management, and order processing.</p>
+                </div>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="px-2 py-1 bg-blue-900 text-blue-200 rounded-full text-xs">Node.js</span>
+                  <span class="px-2 py-1 bg-blue-900 text-blue-200 rounded-full text-xs">EJS</span>
+                  <span class="px-2 py-1 bg-blue-900 text-blue-200 rounded-full text-xs">Tailwind</span>
+                </div>
+                <button class="view-project-btn text-blue-400 hover:text-blue-300 text-sm font-medium inline-flex items-center self-start">
+                  View Project <i class="fas fa-arrow-right ml-2"></i>
+                </button>
+              </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="project-card w-80 flex-shrink-0 bg-gray-800/50 rounded-xl flex flex-col" data-title="Acro Network - Company Profile" data-img="static/assets/project/acronetwork_web.png" data-link="https://acronet.work" data-tech='["Node.js", "EJS", "Tailwind"]' data-description="Digital community that provides a platform for creativity, gaming, and the digital world. We have a modern Minecraft server that you can play with your friends! We also provide various digital products you might need.">
+              <div class="h-48 overflow-hidden rounded-t-lg">
+                <img src="static/assets/project/acronetwork_web.png" alt="Acro Network" class="w-full h-full object-cover">
+              </div>
+              <div class="p-6 flex flex-col flex-grow">
+                <div class="flex-grow">
+                  <h3 class="text-xl font-semibold text-white mb-2">Acro Network - Company Profile</h3>
+                  <p class="text-gray-400 text-sm mb-4 line-clamp-2">Digital community that provides a platform for creativity, gaming, and the digital world. We have a modern Minecraft server that you can play...</p>
+                </div>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="px-2 py-1 bg-blue-900 text-blue-200 rounded-full text-xs">Node.js</span>
+                  <span class="px-2 py-1 bg-blue-900 text-blue-200 rounded-full text-xs">EJS</span>
+                  <span class="px-2 py-1 bg-blue-900 text-blue-200 rounded-full text-xs">Tailwind</span>
+                </div>
+                <button class="view-project-btn text-blue-400 hover:text-blue-300 text-sm font-medium inline-flex items-center self-start">
+                  View Project <i class="fas fa-arrow-right ml-2"></i>
+                </button>
+              </div>
+            </div>
+            <!-- Project 3 -->
+            <div class="project-card w-80 flex-shrink-0 bg-gray-800/50 rounded-xl flex flex-col" data-title="Acro Network - Minecraft Server" data-img="https://acronet.work/assets/VANILLA.png" data-link="https://acronet.work" data-tech='["Java", "Velocity", "Crossplay"]' data-description="A Minecraft server that offers interesting features and is very exciting to play.">
+              <div class="h-48 overflow-hidden rounded-t-lg">
+                <img src="https://acronet.work/assets/VANILLA.png" alt="Acro Network" class="w-full h-full object-cover">
+              </div>
+              <div class="p-6 flex flex-col flex-grow">
+                <div class="flex-grow">
+                  <h3 class="text-xl font-semibold text-white mb-2">Acro Network - Minecraft Server</h3>
+                  <p class="text-gray-400 text-sm mb-4 line-clamp-2">A Minecraft server that offers interesting features and is very exciting to play.</p>
+                </div>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="px-2 py-1 bg-blue-900 text-blue-200 rounded-full text-xs">Java</span>
+                  <span class="px-2 py-1 bg-blue-900 text-blue-200 rounded-full text-xs">Velocity</span>
+                  <span class="px-2 py-1 bg-blue-900 text-blue-200 rounded-full text-xs">Crossplay</span>
+                </div>
+                <button class="view-project-btn text-blue-400 hover:text-blue-300 text-sm font-medium inline-flex items-center self-start">
+                  View Project <i class="fas fa-arrow-right ml-2"></i>
+                </button>
+              </div>
+            </div>
+            <!-- Project 4 -->
+            <div class="project-card w-80 flex-shrink-0 bg-gray-800/50 rounded-xl flex flex-col" data-title="Acro Network - Acro Master" data-img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb1KfMsctjw-fRTNS2OYQ86Uej7s13F4kYhw&s" data-link="https://acronet.work" data-tech='["Javascript", "Discord.js", "Node.js"]' data-description="Official Discord bot for Acro Network that provides various utilities, moderation, and commands.">
+              <div class="h-48 overflow-hidden rounded-t-lg">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb1KfMsctjw-fRTNS2OYQ86Uej7s13F4kYhw&s" alt="Acro Network" class="w-full h-full object-cover">
+              </div>
+              <div class="p-6 flex flex-col flex-grow">
+                <div class="flex-grow">
+                  <h3 class="text-xl font-semibold text-white mb-2">Acro Network - Acro Master</h3>
+                  <p class="text-gray-400 text-sm mb-4 line-clamp-2">Official Discord bot for Acro Network that provides various utilities, moderation, and commands.</p>
+                </div>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="px-2 py-1 bg-blue-900 text-blue-200 rounded-full text-xs">Javascript</span>
+                  <span class="px-2 py-1 bg-blue-900 text-blue-200 rounded-full text-xs">Discord.js</span>
+                  <span class="px-2 py-1 bg-blue-900 text-blue-200 rounded-full text-xs">Node.js</span>
+                </div>
+                <button class="view-project-btn text-blue-400 hover:text-blue-300 text-sm font-medium inline-flex items-center self-start">
+                  View Project <i class="fas fa-arrow-right ml-2"></i>
+                </button>
+              </div>
+            </div>
+            <!-- Project 5-->
+            <div class="project-card w-80 flex-shrink-0 bg-gray-800/50 rounded-xl flex flex-col" data-title="Video ASN Berakhlak PUPR" data-img="static/assets/project/asnberakhlak.png" data-link="https://drive.google.com/file/d/1b8FVbP_6UQuJ2VAC6csABvuCSmCOP2HE/view" data-tech='["Camera", "Premiere Pro", "Editing"]' data-description="Video ASN Berakhlak Dinas Pekerjaan Umum dan Penataan Ruang Bidang Cipta Karya Kabupaten Madiun.">
+              <div class="h-48 overflow-hidden rounded-t-lg">
+                <iframe src="https://drive.google.com/file/d/1b8FVbP_6UQuJ2VAC6csABvuCSmCOP2HE/preview" class="w-full h-full object-cover" width="640" height="480" allow="autoplay"></iframe>
+              </div>
+              <div class="p-6 flex flex-col flex-grow">
+                <div class="flex-grow">
+                  <h3 class="text-xl font-semibold text-white mb-2">Video ASN Berakhlak PUPR</h3>
+                  <p class="text-gray-400 text-sm mb-4 line-clamp-2">Video ASN Berakhlak Dinas Pekerjaan Umum dan Penataan Ruang Bidang Cipta Karya Kabupaten Madiun.</p>
+                </div>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="px-2 py-1 bg-blue-900 text-blue-200 rounded-full text-xs">Camera</span>
+                  <span class="px-2 py-1 bg-blue-900 text-blue-200 rounded-full text-xs">Premiere Pro</span>
+                  <span class="px-2 py-1 bg-blue-900 text-blue-200 rounded-full text-xs">Editing</span>
+                </div>
+                <button class="view-project-btn text-blue-400 hover:text-blue-300 text-sm font-medium inline-flex items-center self-start">
+                  View Project <i class="fas fa-arrow-right ml-2"></i>
+                </button>
+              </div>
+            </div>
+            <!-- Project 6 -->
+            <div class="project-card w-80 flex-shrink-0 bg-gray-800/50 rounded-xl flex flex-col" data-title="FLS2N - Monolog" data-img="static/assets/project/fls2n_monolog.jpg" data-link="https://www.youtube.com/watch?v=OTvYEpkxfmM" data-tech='["Camera", "Premiere Pro", "Editing"]' data-description="Lomba FLS2N bidang Monolog mewakili SMA Negeri 1 Ngawi tahun 2022">
+              <div class="h-48 overflow-hidden rounded-t-lg">
+                <iframe class="w-full h-full object-cover" width="560" height="315" src="https://www.youtube.com/embed/OTvYEpkxfmM?si=49JymuPTSdG9PgDp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div class="p-6 flex flex-col flex-grow">
+                <div class="flex-grow">
+                  <h3 class="text-xl font-semibold text-white mb-2">FLS2N - Monolog</h3>
+                  <p class="text-gray-400 text-sm mb-4 line-clamp-2">Lomba FLS2N bidang Monolog mewakili SMA Negeri 1 Ngawi tahun 2022</p>
+                </div>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="px-2 py-1 bg-blue-900 text-blue-200 rounded-full text-xs">Camera</span>
+                  <span class="px-2 py-1 bg-blue-900 text-blue-200 rounded-full text-xs">Premiere Pro</span>
+                  <span class="px-2 py-1 bg-blue-900 text-blue-200 rounded-full text-xs">Editing</span>
+                </div>
+                <button class="view-project-btn text-blue-400 hover:text-blue-300 text-sm font-medium inline-flex items-center self-start">
+                  View Project <i class="fas fa-arrow-right ml-2"></i>
+                </button>
+              </div>
+            </div>
+            <!-- Project 7 -->
+            <div class="project-card w-80 flex-shrink-0 bg-gray-800/50 rounded-xl flex flex-col" data-title="FLS2N - Baca Puisi" data-img="static/assets/project/fls2n_bacapuisi.jpg" data-link="https://www.youtube.com/watch?v=w6_y_2Szpyg" data-tech='["Camera", "Premiere Pro", "Editing"]' data-description="Lomba FLS2N bidang Baca Puisi mewakili SMA Negeri 1 Ngawi tahun 2022">
+              <div class="h-48 overflow-hidden rounded-t-lg">
+                <iframe class="w-full h-full object-cover" width="560" height="315" src="https://www.youtube.com/embed/w6_y_2Szpyg?si=g73MmaFuTurc3qR5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div class="p-6 flex flex-col flex-grow">
+                <div class="flex-grow">
+                  <h3 class="text-xl font-semibold text-white mb-2">FLS2N - Baca Puisi</h3>
+                  <p class="text-gray-400 text-sm mb-4 line-clamp-2">Lomba FLS2N bidang Baca Puisi mewakili SMA Negeri 1 Ngawi tahun 2022</p>
+                </div>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="px-2 py-1 bg-blue-900 text-blue-200 rounded-full text-xs">Camera</span>
+                  <span class="px-2 py-1 bg-blue-900 text-blue-200 rounded-full text-xs">Premiere Pro</span>
+                  <span class="px-2 py-1 bg-blue-900 text-blue-200 rounded-full text-xs">Editing</span>
+                </div>
+                <button class="view-project-btn text-blue-400 hover:text-blue-300 text-sm font-medium inline-flex items-center self-start">
+                  View Project <i class="fas fa-arrow-right ml-2"></i>
+                </button>
+              </div>
+            </div>
+            <!-- Project 8 -->
+            <div class="project-card w-80 flex-shrink-0 bg-gray-800/50 rounded-xl flex flex-col" data-title="FLS2N - Film Pendek" data-img="static/assets/project/fls2n_film_pendek.jpg" data-link="https://www.youtube.com/watch?v=hPLhXikJSUo" data-tech='["Camera", "Premiere Pro", "Editing"]' data-description="Lomba FLS2N bidang Film Pendek mewakili SMA Negeri 1 Ngawi tahun 2022">
+              <div class="h-48 overflow-hidden rounded-t-lg">
+                <iframe class="w-full h-full object-cover" width="560" height="315" src="https://www.youtube.com/embed/hPLhXikJSUo?si=UZRGwjV2lsU3Cl0v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div class="p-6 flex flex-col flex-grow">
+                <div class="flex-grow">
+                  <h3 class="text-xl font-semibold text-white mb-2">FLS2N - Film Pendek</h3>
+                  <p class="text-gray-400 text-sm mb-4 line-clamp-2">Lomba FLS2N bidang Film Pendek mewakili SMA Negeri 1 Ngawi tahun 2022</p>
+                </div>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="px-2 py-1 bg-blue-900 text-blue-200 rounded-full text-xs">Camera</span>
+                  <span class="px-2 py-1 bg-blue-900 text-blue-200 rounded-full text-xs">Premiere Pro</span>
+                  <span class="px-2 py-1 bg-blue-900 text-blue-200 rounded-full text-xs">Editing</span>
+                </div>
+                <button class="view-project-btn text-blue-400 hover:text-blue-300 text-sm font-medium inline-flex items-center self-start">
+                  View Project <i class="fas fa-arrow-right ml-2"></i>
+                </button>
+              </div>
+            </div>
+            <!-- Project 9 -->
+            <div class="project-card w-80 flex-shrink-0 bg-gray-800/50 rounded-xl flex flex-col" data-title="SMA Awards 2022 - Story Telling" data-img="static/assets/project/smaawards_story_telling.jpg" data-link="https://www.youtube.com/watch?v=mOEwoloYkxI" data-tech='["Camera", "Premiere Pro", "Editing"]' data-description="Lomba Jawa Pos SMA Awards 2022 bidang Story Telling mewakili SMA Negeri 1 Ngawi tahun 2022">
+              <div class="h-48 overflow-hidden rounded-t-lg">
+                <iframe class="w-full h-full object-cover" width="560" height="315" src="https://www.youtube.com/embed/mOEwoloYkxI?si=H4XfRe4aklUM6oPu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div class="p-6 flex flex-col flex-grow">
+                <div class="flex-grow">
+                  <h3 class="text-xl font-semibold text-white mb-2">SMA Awards 2022 - Story Telling</h3>
+                  <p class="text-gray-400 text-sm mb-4 line-clamp-2">Lomba Jawa Pos SMA Awards 2022 bidang Story Telling mewakili SMA Negeri 1 Ngawi tahun 2022</p>
+                </div>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="px-2 py-1 bg-blue-900 text-blue-200 rounded-full text-xs">Camera</span>
+                  <span class="px-2 py-1 bg-blue-900 text-blue-200 rounded-full text-xs">Premiere Pro</span>
+                  <span class="px-2 py-1 bg-blue-900 text-blue-200 rounded-full text-xs">Editing</span>
+                </div>
+                <button class="view-project-btn text-blue-400 hover:text-blue-300 text-sm font-medium inline-flex items-center self-start">
+                  View Project <i class="fas fa-arrow-right ml-2"></i>
+                </button>
+              </div>
+            </div>
+            <!-- Project 10 -->
+             <div class="project-card w-80 flex-shrink-0 bg-gray-800/50 rounded-xl flex flex-col" data-title="SMA Awards 2022 - News Anchor" data-img="static/assets/project/smaawards_news_anchor.jpg" data-link="https://www.youtube.com/watch?v=IgSbaoA8mzw" data-tech='["Camera", "Premiere Pro", "Editing"]' data-description="Lomba Jawa Pos SMA Awards 2022 bidang News Anchor mewakili SMA Negeri 1 Ngawi tahun 2022">
+              <div class="h-48 overflow-hidden rounded-t-lg">
+                <iframe class="w-full h-full object-cover" width="560" height="315" src="https://www.youtube.com/embed/IgSbaoA8mzw?si=3zfhroIN_F13Vl3L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div class="p-6 flex flex-col flex-grow">
+                <div class="flex-grow">
+                  <h3 class="text-xl font-semibold text-white mb-2">SMA Awards 2022 - News Anchor</h3>
+                  <p class="text-gray-400 text-sm mb-4 line-clamp-2">Lomba Jawa Pos SMA Awards 2022 bidang News Anchor mewakili SMA Negeri 1 Ngawi tahun 2022</p>
+                </div>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="px-2 py-1 bg-blue-900 text-blue-200 rounded-full text-xs">Camera</span>
+                  <span class="px-2 py-1 bg-blue-900 text-blue-200 rounded-full text-xs">Premiere Pro</span>
+                  <span class="px-2 py-1 bg-blue-900 text-blue-200 rounded-full text-xs">Editing</span>
+                </div>
+                <button class="view-project-btn text-blue-400 hover:text-blue-300 text-sm font-medium inline-flex items-center self-start">
+                  View Project <i class="fas fa-arrow-right ml-2"></i>
+                </button>
+              </div>
+            </div>
+            <!-- Project 11 -->
+             <div class="project-card w-80 flex-shrink-0 bg-gray-800/50 rounded-xl flex flex-col" data-title="SMA Awards 2022 - Duta Pelajar Putri" data-img="static/assets/project/smaawards_duta_pelajar_putri.jpg" data-link="https://www.youtube.com/watch?v=1-bSLyaAM_E" data-tech='["Camera", "Premiere Pro", "Editing"]' data-description="Lomba Jawa Pos SMA Awards 2022 bidang Duta Pelajar Putri mewakili SMA Negeri 1 Ngawi tahun 2022">
+              <div class="h-48 overflow-hidden rounded-t-lg">
+                <iframe class="w-full h-full object-cover" width="560" height="315" src="https://www.youtube.com/embed/1-bSLyaAM_E?si=nE7tSOpCX2pyVsoE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div class="p-6 flex flex-col flex-grow">
+                <div class="flex-grow">
+                  <h3 class="text-xl font-semibold text-white mb-2">SMA Awards 2022 - Duta Pelajar Putri</h3>
+                  <p class="text-gray-400 text-sm mb-4 line-clamp-2">Lomba Jawa Pos SMA Awards 2022 bidang Duta Pelajar Putri mewakili SMA Negeri 1 Ngawi tahun 2022</p>
+                </div>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="px-2 py-1 bg-blue-900 text-blue-200 rounded-full text-xs">Camera</span>
+                  <span class="px-2 py-1 bg-blue-900 text-blue-200 rounded-full text-xs">Premiere Pro</span>
+                  <span class="px-2 py-1 bg-blue-900 text-blue-200 rounded-full text-xs">Editing</span>
+                </div>
+                <button class="view-project-btn text-blue-400 hover:text-blue-300 text-sm font-medium inline-flex items-center self-start">
+                  View Project <i class="fas fa-arrow-right ml-2"></i>
+                </button>
+              </div>
+            </div>
+            <!-- Project 12 -->
+             <div class="project-card w-80 flex-shrink-0 bg-gray-800/50 rounded-xl flex flex-col" data-title="SMA Awards 2022 - Duta Pelajar Putra" data-img="static/assets/project/smaawards_duta_pelajar_putra.jpg" data-link="https://www.youtube.com/watch?v=o8srBcFLWFQ" data-tech='["Camera", "Premiere Pro", "Editing"]' data-description="Lomba Jawa Pos SMA Awards 2022 bidang Duta Pelajar Putra mewakili SMA Negeri 1 Ngawi tahun 2022">
+              <div class="h-48 overflow-hidden rounded-t-lg">
+                <iframe class="w-full h-full object-cover" width="560" height="315" src="https://www.youtube.com/embed/o8srBcFLWFQ?si=DkDishIwAPMhn4lR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div class="p-6 flex flex-col flex-grow">
+                <div class="flex-grow">
+                  <h3 class="text-xl font-semibold text-white mb-2">SMA Awards 2022 - Duta Pelajar Putra</h3>
+                  <p class="text-gray-400 text-sm mb-4 line-clamp-2">Lomba Jawa Pos SMA Awards 2022 bidang Duta Pelajar Putra mewakili SMA Negeri 1 Ngawi tahun 2022</p>
+                </div>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="px-2 py-1 bg-blue-900 text-blue-200 rounded-full text-xs">Camera</span>
+                  <span class="px-2 py-1 bg-blue-900 text-blue-200 rounded-full text-xs">Premiere Pro</span>
+                  <span class="px-2 py-1 bg-blue-900 text-blue-200 rounded-full text-xs">Editing</span>
+                </div>
+                <button class="view-project-btn text-blue-400 hover:text-blue-300 text-sm font-medium inline-flex items-center self-start">
+                  View Project <i class="fas fa-arrow-right ml-2"></i>
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div id="project-modal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center p-4 z-50 transition-opacity duration-300 ease-in-out opacity-0 pointer-events-none">
+          <div id="modal-panel" class="bg-gray-800 rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto relative transition-all duration-300 ease-in-out scale-95 opacity-0">
+            <button id="modal-close-btn" class="absolute top-4 right-4 text-gray-400 hover:text-white text-2xl z-10">
+              <i class="fas fa-times"></i>
+            </button>
+            <img id="modal-img" src="" alt="Project Screenshot" class="w-full h-64 object-cover rounded-t-2xl">
+            <div class="p-8">
+              <h3 id="modal-title" class="text-3xl font-bold text-white mb-4"></h3>
+              <h4 class="text-lg font-semibold text-gray-300 mb-2">About This Project</h4>
+              <p id="modal-description" class="text-gray-400 mb-6"></p>
+              <h4 class="text-lg font-semibold text-gray-300 mb-2">Technologies Used</h4>
+              <div id="modal-tech-container" class="flex flex-wrap gap-3 mb-8">
+              </div>
+              <div class="flex items-center gap-4">
+                <a id="modal-link" href="#" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-lg inline-flex items-center transition-colors">
+                  View Live Project <i class="fas fa-external-link-alt ml-2"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button id="prev-button" class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-700/50 hover:bg-gray-700 text-white p-2 rounded-full z-10">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+
+        <button id="next-button" class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-700/50 hover:bg-gray-700 text-white p-2 rounded-full z-10">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="text-center mt-12">
+        <a href="#" class="inline-block px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-full transition duration-300 transform hover:scale-105">
+          Explore More Projects
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-gray-900">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-5 gradient-text">Connect With Me</h2>
+      <p class="text-center text-gray-400 mb-16">
+        I'm always open to new opportunities and collaborations. Feel free to reach out to me through the form below or connect with me on social media.
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+        <!-- Contact Info -->
+        <div>
+          <h3 class="text-2xl font-semibold text-white mb-6">Get in Touch</h3>
+
+          <div class="space-y-6">
+            <div class="contact-card p-6 rounded-xl">
+              <div class="flex items-start">
+                <div class="bg-blue-500 p-3 rounded-lg mr-4">
+                  <i class="fas fa-map-marker-alt text-white"></i>
+                </div>
+                <div>
+                  <h4 class="text-lg font-medium text-white mb-1">Location</h4>
+                  <p class="text-gray-400">Ngawi, Jawa Timur, Indonesia</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-card p-6 rounded-xl">
+              <div class="flex items-start">
+                <div class="bg-blue-500 p-3 rounded-lg mr-4">
+                  <i class="fas fa-envelope text-white"></i>
+                </div>
+                <div>
+                  <h4 class="text-lg font-medium text-white mb-1">Email</h4>
+                  <p class="text-gray-400">contact@lzuardiai.my.id</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-card p-6 rounded-xl">
+              <div class="flex items-start">
+                <div class="bg-blue-500 p-3 rounded-lg mr-4">
+                  <i class="fas fa-phone-alt text-white"></i>
+                </div>
+                <div>
+                  <h4 class="text-lg font-medium text-white mb-1">Phone</h4>
+                  <p class="text-gray-400">Send me a message!</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-card p-6 rounded-xl">
+              <div class="flex items-start">
+                <div class="bg-blue-500 p-3 rounded-lg mr-4">
+                  <i class="fas fa-clock text-white"></i>
+                </div>
+                <div>
+                  <h4 class="text-lg font-medium text-white mb-1">Working Hours</h4>
+                  <p class="text-gray-400">Monday - Sunday: 6AM - 10PM</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex space-x-4 mt-8">
+            <a href="https://www.linkedin.com/in/lazuardi-akbar-imani-803836375/" class="social-icon text-blue-400 hover:text-blue-300 text-2xl" aria-label="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://www.instagram.com/lzuardiai" class="social-icon text-pink-500 hover:text-pink-400 text-2xl" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://github.com/Dezkrazzer" class="social-icon text-gray-200 hover:text-white text-2xl" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div>
+          <h3 class="text-2xl font-semibold text-white mb-6">Send Me a Message</h3>
+
+          <form class="space-y-6">
+            <div>
+              <label for="name" class="block text-gray-300 mb-2">Your Name</label>
+              <input type="text" id="name" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white" placeholder="Enter your name">
+            </div>
+
+            <div>
+              <label for="know" class="block text-gray-300 mb-2">Do you know me from?</label>
+              <input type="text" id="know" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white" placeholder="Enter where you know me from">
+            </div>
+
+            <div>
+              <label for="subject" class="block text-gray-300 mb-2">Subject</label>
+              <input type="text" id="subject" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white" placeholder="Enter subject">
+            </div>
+
+            <div>
+              <label for="message" class="block text-gray-300 mb-2">Your Message</label>
+              <textarea id="message" rows="5" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white" placeholder="Enter your message"></textarea>
+            </div>
+
+            <button type="button" onclick="sendToWhatsapp()" class="w-full px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition duration-300 transform hover:scale-105">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 py-12">
+    <div class="container mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="mb-6 md:mb-0">
+          <h2 class="text-2xl font-bold text-white">Lazuardi Akbar Imani</h2>
+          <p class="text-gray-400 mt-2">Informatics Student | Full-stack Developer</p>
+        </div>
+
+        <div class="flex space-x-6">
+          <a href="#home" class="text-gray-400 hover:text-white transition duration-300">Home</a>
+          <a href="#about" class="text-gray-400 hover:text-white transition duration-300">About</a>
+          <a href="#services" class="text-gray-400 hover:text-white transition duration-300">Services</a>
+          <a href="#projects" class="text-gray-400 hover:text-white transition duration-300">Projects</a>
+          <a href="#contact" class="text-gray-400 hover:text-white transition duration-300">Contact</a>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+        <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2025 lzuardiai. All rights reserved.</p>
+
+        <div class="flex space-x-4">
+          <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="static/js/index.js" type="text/javascript"></script>
 </body>
-
 </html>
