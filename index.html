@@ -27,7 +27,7 @@
 
   <link href="static/style/index.css" rel="stylesheet">
 </head>
-<body>
+<body class="max-w-full overflow-x-hidden">
   <!-- Navigation -->
   <nav class="fixed w-full z-50 bg-gray-900 bg-opacity-90 backdrop-blur-sm">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -386,7 +386,7 @@
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto" data-aos="zoom-in">
         <!-- Programming Languages -->
-        <div class="bg-gray-800 p-6 rounded-xl hover:scale-110 transition-all duration-300">
+        <div class="bg-gray-800 p-6 rounded-xl md:hover:scale-110 transition-all duration-300">
           <h3 class="text-xl font-semibold text-white mb-6 border-b border-gray-700 pb-2">Programming Languages</h3>
           <div class="grid grid-cols-3 gap-4">
             <div class="flex flex-col items-center">
@@ -409,7 +409,7 @@
         </div>
 
         <!-- Front-end Techs -->
-        <div class="bg-gray-800 p-6 rounded-xl hover:scale-110 transition-all duration-300">
+        <div class="bg-gray-800 p-6 rounded-xl md:hover:scale-110 transition-all duration-300">
           <h3 class="text-xl font-semibold text-white mb-6 border-b border-gray-700 pb-2">Front-end Techs</h3>
           <div class="grid grid-cols-3 gap-4">
             <div class="flex flex-col items-center">
@@ -432,7 +432,7 @@
         </div>
 
         <!-- Database -->
-        <div class="bg-gray-800 p-6 rounded-xl hover:scale-110 transition-all duration-300">
+        <div class="bg-gray-800 p-6 rounded-xl md:hover:scale-110 transition-all duration-300">
           <h3 class="text-xl font-semibold text-white mb-6 border-b border-gray-700 pb-2">Database</h3>
           <div class="grid grid-cols-3 gap-4">
             <div class="flex flex-col items-center">
@@ -451,7 +451,7 @@
         </div>
 
         <!-- Tools -->
-        <div class="bg-gray-800 p-6 rounded-xl hover:scale-110 transition-all duration-300">
+        <div class="bg-gray-800 p-6 rounded-xl md:hover:scale-110 transition-all duration-300">
           <h3 class="text-xl font-semibold text-white mb-6 border-b border-gray-700 pb-2">Tools</h3>
           <div class="grid grid-cols-3 gap-4">
             <div class="flex flex-col items-center">
@@ -478,7 +478,7 @@
         </div>
 
         <!-- Multimedia -->
-        <div class="bg-gray-800 p-6 rounded-xl hover:scale-110 transition-all duration-300">
+        <div class="bg-gray-800 p-6 rounded-xl md:hover:scale-110 transition-all duration-300">
           <h3 class="text-xl font-semibold text-white mb-6 border-b border-gray-700 pb-2">Multimedia</h3>
           <div class="grid grid-cols-3 gap-4">
             <div class="flex flex-col items-center">
@@ -509,7 +509,7 @@
         </div>
 
         <!-- Soft Skills -->
-        <div class="bg-gray-800 p-6 rounded-xl hover:scale-110 transition-all duration-300">
+        <div class="bg-gray-800 p-6 rounded-xl md:hover:scale-110 transition-all duration-300">
           <h3 class="text-xl font-semibold text-white mb-6 border-b border-gray-700 pb-2">Soft Skills</h3>
           <div class="grid grid-cols-3 gap-4">
             <div class="flex flex-col items-center">
@@ -1136,42 +1136,42 @@
 
   <!-- Footer -->
   <footer class="bg-gray-800 py-12">
-    <div class="container mx-auto px-6">
-      <div class="flex flex-col md:flex-row justify-between items-center">
-        <div class="mb-6 md:mb-0">
-          <h2 class="text-2xl font-bold text-white">Lazuardi Akbar Imani</h2>
-          <p class="text-gray-400 mt-2">Informatics Student | Full-stack Developer</p>
-        </div>
-
-        <div class="flex space-x-6">
-          <a href="#home" class="text-gray-400 hover:text-white transition duration-300">Home</a>
-          <a href="#about" class="text-gray-400 hover:text-white transition duration-300">About</a>
-          <a href="#services" class="text-gray-400 hover:text-white transition duration-300">Services</a>
-          <a href="#projects" class="text-gray-400 hover:text-white transition duration-300">Projects</a>
-          <a href="#contact" class="text-gray-400 hover:text-white transition duration-300">Contact</a>
-        </div>
+  <div class="container mx-auto px-6">
+    <div class="flex flex-col md:flex-row justify-between items-center">
+      <div class="mb-6 md:mb-0 text-center md:text-left">
+        <h2 class="text-2xl font-bold text-white">Lazuardi Akbar Imani</h2>
+        <p class="text-gray-400 mt-2">Informatics Student | Full-stack Developer</p>
       </div>
 
-      <div class="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-        <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2025 lzuardiai. All rights reserved.</p>
-
-        <div class="flex space-x-4">
-          <a href="#" class="text-gray-400 hover:text-white transition duration-300">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="#" class="text-gray-400 hover:text-white transition duration-300">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="#" class="text-gray-400 hover:text-white transition duration-300">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a href="#" class="text-gray-400 hover:text-white transition duration-300">
-            <i class="fab fa-twitter"></i>
-          </a>
-        </div>
+      <div class="flex flex-wrap justify-center gap-x-6 gap-y-2">
+        <a href="#home" class="text-gray-400 hover:text-white transition duration-300">Home</a>
+        <a href="#about" class="text-gray-400 hover:text-white transition duration-300">About</a>
+        <a href="#services" class="text-gray-400 hover:text-white transition duration-300">Services</a>
+        <a href="#projects" class="text-gray-400 hover:text-white transition duration-300">Projects</a>
+        <a href="#contact" class="text-gray-400 hover:text-white transition duration-300">Contact</a>
       </div>
     </div>
-  </footer>
+
+    <div class="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+      <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2025 lzuardiai. All rights reserved.</p>
+
+      <div class="flex space-x-4">
+        <a href="https://www.linkedin.com/in/lazuardiakbar" class="text-gray-400 hover:text-white transition duration-300" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/Dezkrazzer" class="text-gray-400 hover:text-white transition duration-300" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.instagram.com/lzuardiai" class="text-gray-400 hover:text-white transition duration-300" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" class="text-gray-400 hover:text-white transition duration-300" aria-label="Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
 
   <script src="static/js/index.js" type="text/javascript"></script>
   <script>
