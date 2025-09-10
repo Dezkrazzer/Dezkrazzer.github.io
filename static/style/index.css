@@ -1,10 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+/* Global safety: prevent horizontal scroll and make layout/media responsive */
+html {
+    overflow-x: hidden;
+    overscroll-behavior-x: none;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #111827;
     color: #e5e7eb;
     scroll-behavior: smooth;
+    overflow-x: hidden; /* hard stop side scroll */
+    width: 100%;
+    touch-action: pan-y; /* allow vertical pan only on touch devices */
+    overscroll-behavior-x: none;
+}
+
+img,
+video,
+canvas,
+svg,
+iframe {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .hero-section {
@@ -110,6 +136,12 @@ body {
 .slider-container {
     overflow: hidden;
     white-space: nowrap;
+}
+
+/* Ensure the horizontal project slider doesn't trigger page side-swipe on mobile */
+#slider-container {
+    touch-action: pan-y;            /* block horizontal pan gestures */
+    overscroll-behavior-x: contain; /* stop scroll chaining */
 }
 
 .slider-container:hover .slider {
