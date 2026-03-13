@@ -62,7 +62,16 @@ iframe {
     -webkit-backdrop-filter: blur(15px) saturate(180%);
     border: 1.5px solid rgba(255, 255, 255, 0.4);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2), inset 0 0 0 1px rgba(255, 255, 255, 0.1);
-    transition: all 0.3s ease;
+    transition: padding 0.35s cubic-bezier(0.22, 1, 0.36, 1), gap 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s ease;
+}
+
+@media screen and (min-width: 769px) {
+    .navbar:hover,
+    .navbar:focus-within {
+        padding: 10px 36px 10px 46px;
+        gap: 44px;
+        box-shadow: 0 12px 36px 0 rgba(0, 0, 0, 0.28), inset 0 0 0 1px rgba(255, 255, 255, 0.15);
+    }
 }
 
 /* --- NAMA WEBSITE (BRAND) --- */
