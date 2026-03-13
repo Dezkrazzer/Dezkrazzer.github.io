@@ -1,3 +1,20 @@
+//Navbar responsive
+const hamburger = document.querySelector('.hamburger');
+const navMobileLinks = document.querySelector('.nav-mobile-links');
+
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navMobileLinks.classList.toggle('active');
+});
+
+// Tutup mobile menu saat link diklik
+document.querySelectorAll('.nav-mobile-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navMobileLinks.classList.remove('active');
+    });
+});
+
 // Mobile menu toggle
 const mobileMenuButton = document.querySelector('.mobile-menu-button');
 const mobileMenu = document.querySelector('.mobile-menu');
