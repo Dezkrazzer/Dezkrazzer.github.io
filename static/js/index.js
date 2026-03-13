@@ -2,16 +2,20 @@
 const hamburger = document.querySelector('.hamburger');
 const navMobileLinks = document.querySelector('.nav-mobile-links');
 
-hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('active');
-    navMobileLinks.classList.toggle('active');
-});
+if (hamburger && navMobileLinks) {
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navMobileLinks.classList.toggle('active');
+    });
+}
 
 // Tutup mobile menu saat link diklik
 document.querySelectorAll('.nav-mobile-links a').forEach(link => {
     link.addEventListener('click', () => {
-        hamburger.classList.remove('active');
-        navMobileLinks.classList.remove('active');
+        if (hamburger && navMobileLinks) {
+            hamburger.classList.remove('active');
+            navMobileLinks.classList.remove('active');
+        }
     });
 });
 
@@ -19,15 +23,19 @@ document.querySelectorAll('.nav-mobile-links a').forEach(link => {
 const mobileMenuButton = document.querySelector('.mobile-menu-button');
 const mobileMenu = document.querySelector('.mobile-menu');
 
-mobileMenuButton.addEventListener('click', () => {
-    mobileMenu.classList.toggle('hidden');
-});
+if (mobileMenuButton && mobileMenu) {
+    mobileMenuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+}
 
 // Close mobile menu when clicking on a link
 const mobileMenuLinks = document.querySelectorAll('.mobile-menu a');
 mobileMenuLinks.forEach(link => {
     link.addEventListener('click', () => {
-        mobileMenu.classList.add('hidden');
+        if (mobileMenu) {
+            mobileMenu.classList.add('hidden');
+        }
     });
 });
 
@@ -110,30 +118,60 @@ document.addEventListener('DOMContentLoaded', function () {
     const sliderContainer = document.getElementById('slider-container');
     const prevButton = document.getElementById('prev-button');
     const nextButton = document.getElementById('next-button');
-    const card = sliderContainer.querySelector('.project-card');
 
     // Cek jika elemen ditemukan sebelum melanjutkan
-    if (!sliderContainer || !prevButton || !nextButton || !card) {
+    if (!sliderContainer || !prevButton || !nextButton) {
         console.error("Slider elements not found!");
         return;
     }
 
+    const card = sliderContainer.querySelector('.project-card');
+    if (!card) {
+        console.error("Project card not found!");
+        return;
+    }
+
     // Hitung jarak scroll berdasarkan lebar kartu + gap
-    const cardStyle = window.getComputedStyle(card);
-    const sliderStyle = window.getComputedStyle(sliderContainer.querySelector('.slidere'));
-    const cardMargin = parseInt(cardStyle.marginRight) + parseInt(cardStyle.marginLeft);
-    const cardGap = parseInt(sliderStyle.gap);
-    const scrollAmount = card.offsetWidth + cardMargin + cardGap;
+    const getScrollAmount = () => {
+        const cardStyle = window.getComputedStyle(card);
+        const track = sliderContainer.querySelector('.slidere');
+        const sliderStyle = track ? window.getComputedStyle(track) : { gap: '0' };
+        const cardMargin = parseInt(cardStyle.marginRight) + parseInt(cardStyle.marginLeft);
+        const cardGap = parseInt(sliderStyle.gap) || 0;
+        return card.offsetWidth + cardMargin + cardGap;
+    };
+
+    const updateNavState = () => {
+        const maxScrollLeft = sliderContainer.scrollWidth - sliderContainer.clientWidth;
+        prevButton.disabled = sliderContainer.scrollLeft <= 4;
+        nextButton.disabled = sliderContainer.scrollLeft >= maxScrollLeft - 4;
+    };
 
     // Fungsi untuk menggeser ke kanan
     nextButton.addEventListener('click', () => {
-        sliderContainer.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+        sliderContainer.scrollBy({ left: getScrollAmount(), behavior: 'smooth' });
     });
 
     // Fungsi untuk menggeser ke kiri
     prevButton.addEventListener('click', () => {
-        sliderContainer.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+        sliderContainer.scrollBy({ left: -getScrollAmount(), behavior: 'smooth' });
     });
+
+    sliderContainer.addEventListener('scroll', updateNavState, { passive: true });
+    window.addEventListener('resize', updateNavState);
+
+    sliderContainer.addEventListener('keydown', (event) => {
+        if (event.key === 'ArrowRight') {
+            event.preventDefault();
+            sliderContainer.scrollBy({ left: getScrollAmount(), behavior: 'smooth' });
+        }
+        if (event.key === 'ArrowLeft') {
+            event.preventDefault();
+            sliderContainer.scrollBy({ left: -getScrollAmount(), behavior: 'smooth' });
+        }
+    });
+
+    updateNavState();
 });
 
 // Project Details
@@ -150,18 +188,20 @@ document.addEventListener('DOMContentLoaded', function () {
     const modalTechContainer = document.getElementById('modal-tech-container');
     const modalLink = document.getElementById('modal-link');
 
-    modalLink.addEventListener('click', function (event) {
-        // Mencegah perilaku default link yang mungkin terganggu
-        event.preventDefault();
+    if (modalLink) {
+        modalLink.addEventListener('click', function (event) {
+            // Mencegah perilaku default link yang mungkin terganggu
+            event.preventDefault();
 
-        // Ambil URL dari atribut href tombol itu sendiri
-        const url = this.href;
+            // Ambil URL dari atribut href tombol itu sendiri
+            const url = this.href;
 
-        // Buka URL di tab baru secara manual jika link valid
-        if (url && url.trim() !== '' && !url.endsWith('#')) {
-            window.open(url, '_blank');
-        }
-    });
+            // Buka URL di tab baru secara manual jika link valid
+            if (url && url.trim() !== '' && !url.endsWith('#')) {
+                window.open(url, '_blank');
+            }
+        });
+    }
 
     // --- Function to open the modal with animation ---
     const openModal = (card) => {

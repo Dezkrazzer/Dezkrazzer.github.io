@@ -560,9 +560,9 @@
         Here are some of the projects I've worked on, showcasing my skills in web development, design, and multimedia.
       </p>
 
-      <div class="relative" data-aos="fade-up">
-        <div id="slider-container" class="overflow-x-auto scroll-smooth no-scrollbar">
-          <div class="slidere inline-flex gap-8 p-8">
+      <div class="relative project-showcase" data-aos="fade-up">
+        <div id="slider-container" class="project-slider overflow-x-auto scroll-smooth no-scrollbar" tabindex="0" aria-label="Project carousel">
+          <div class="slidere project-track inline-flex gap-8 p-8">
             <!-- Project 1 -->
             <div class="project-card w-80 flex-shrink-0 bg-gray-800/50 rounded-xl flex flex-col" data-title="DIGINESA - Company Profile" data-img="static/assets/project/diginesa.png" data-link="https://diginesa.com" data-tech='["Node.js", "EJS", "Tailwind"]' data-description="A comprehensive dashboard for online stores with analytics, inventory management, and order processing.">
               <div class="h-48 overflow-hidden rounded-t-lg">
@@ -1014,13 +1014,13 @@
           </div>
         </div>
 
-        <button id="prev-button" class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-700/50 hover:bg-gray-700 text-white p-2 rounded-full z-10">
+        <button id="prev-button" class="project-nav-btn absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-700/50 hover:bg-gray-700 text-white p-2 rounded-full z-10" aria-label="Previous projects">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
           </svg>
         </button>
 
-        <button id="next-button" class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-700/50 hover:bg-gray-700 text-white p-2 rounded-full z-10">
+        <button id="next-button" class="project-nav-btn absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-700/50 hover:bg-gray-700 text-white p-2 rounded-full z-10" aria-label="Next projects">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
           </svg>
